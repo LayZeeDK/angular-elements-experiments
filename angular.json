@@ -23,33 +23,26 @@
             "outputPath": "dist/minimal-elements-without-platform-and-ngzone",
             "index": "apps/minimal-elements-without-platform-and-ngzone/src/index.html",
             "main": "apps/minimal-elements-without-platform-and-ngzone/src/main.ts",
-            "polyfills": "apps/minimal-elements-without-platform-and-ngzone/src/polyfills.ts",
+            "polyfills": "",
             "tsConfig": "apps/minimal-elements-without-platform-and-ngzone/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/minimal-elements-without-platform-and-ngzone/src/favicon.ico",
-              "apps/minimal-elements-without-platform-and-ngzone/src/assets"
-            ],
-            "styles": [
-              "apps/minimal-elements-without-platform-and-ngzone/src/styles.css"
-            ],
+            "assets": [],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/minimal-elements-without-platform-and-ngzone/src/environments/environment.ts",
-                  "with": "apps/minimal-elements-without-platform-and-ngzone/src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
+              "commonChunk": false,
               "buildOptimizer": true,
+              "singleBundle": true,
+              "index": "",
               "budgets": [
                 {
                   "type": "initial",
@@ -86,16 +79,11 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "apps/minimal-elements-without-platform-and-ngzone/src/test.ts",
-            "polyfills": "apps/minimal-elements-without-platform-and-ngzone/src/polyfills.ts",
+            "polyfills": "",
             "tsConfig": "apps/minimal-elements-without-platform-and-ngzone/tsconfig.spec.json",
             "karmaConfig": "apps/minimal-elements-without-platform-and-ngzone/karma.conf.js",
-            "assets": [
-              "apps/minimal-elements-without-platform-and-ngzone/src/favicon.ico",
-              "apps/minimal-elements-without-platform-and-ngzone/src/assets"
-            ],
-            "styles": [
-              "apps/minimal-elements-without-platform-and-ngzone/src/styles.css"
-            ],
+            "assets": [],
+            "styles": [],
             "scripts": []
           }
         },
