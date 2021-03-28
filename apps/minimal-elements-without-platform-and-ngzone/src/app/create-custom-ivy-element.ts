@@ -3,9 +3,11 @@ import {
   ComponentFactory,
   ComponentFactoryResolver,
   Injector,
+  NgZone,
   Type,
   ViewRef,
   ɵNG_COMP_DEF,
+  ɵNoopNgZone,
   ɵRender3ComponentFactory,
 } from '@angular/core';
 import { createCustomElement, NgElementConfig, NgElementConstructor } from '@angular/elements';
@@ -39,6 +41,10 @@ export function createCustomIvyElement<P>(
       {
         provide: ComponentFactoryResolver,
         useFactory: () => new IvyComponentFactoryResolver(),
+      },
+      {
+        provide: NgZone,
+        useClass: ɵNoopNgZone,
       },
     ],
   });
