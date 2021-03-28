@@ -29,7 +29,7 @@ export function createCustomIvyElement<P>(
   }
 
   config.injector = Injector.create({
-    name: 'IvyElmentInjector',
+    name: 'IvyElementInjector',
     parent: config.injector,
     providers: [
       {
