@@ -3,6 +3,7 @@ dependencies:
   '@angular/common': 11.2.7_@angular+core@11.2.7+rxjs@6.6.6
   '@angular/compiler': 11.2.7
   '@angular/core': 11.2.7_rxjs@6.6.6+zone.js@0.11.4
+  '@angular/elements': 11.2.7_f43770207192fa879a18737f3efd63d8
   '@angular/forms': 11.2.7_437e59ff32d3868ae796dbdf2239dff7
   '@angular/platform-browser': 11.2.7_c3368fe88cb13d035903ec0b47d8584b
   '@angular/platform-browser-dynamic': 11.2.7_7e01348d1871971d27e9316e68c6764a
@@ -353,6 +354,19 @@ packages:
       zone.js: ~0.10.2
     resolution:
       integrity: sha512-6Pxgsrf0qF9iFFqmIcWmjJGkkCaCm6V5QNnxMy2KloO3SDq6QuMVRbN9RtC8Urmo25LP+eZ6ZgYqFYpdD8Hd9w==
+  /@angular/elements/11.2.7_f43770207192fa879a18737f3efd63d8:
+    dependencies:
+      '@angular/core': 11.2.7_rxjs@6.6.6+zone.js@0.11.4
+      '@angular/platform-browser': 11.2.7_c3368fe88cb13d035903ec0b47d8584b
+      rxjs: 6.6.6
+      tslib: 2.1.0
+    dev: false
+    peerDependencies:
+      '@angular/core': 11.2.7
+      '@angular/platform-browser': 11.2.7
+      rxjs: ^6.5.3
+    resolution:
+      integrity: sha512-QOrKorXWggsQDEAy18Stip4j96GPbA7URFvTkK7+09/HFKzWwIrN/M2dzwW6WtCEhhQW/aSvG5M+ANgvBdQ4QQ==
   /@angular/forms/11.2.7_437e59ff32d3868ae796dbdf2239dff7:
     dependencies:
       '@angular/common': 11.2.7_@angular+core@11.2.7+rxjs@6.6.6
@@ -9568,6 +9582,7 @@ specifiers:
   '@angular/compiler': ~11.2.7
   '@angular/compiler-cli': ~11.2.7
   '@angular/core': ~11.2.7
+  '@angular/elements': 11.2.7
   '@angular/forms': ~11.2.7
   '@angular/platform-browser': ~11.2.7
   '@angular/platform-browser-dynamic': ~11.2.7
