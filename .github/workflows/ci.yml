@@ -34,10 +34,10 @@ jobs:
       - uses: ngworker/angular-versions-action@v3
         with:
           angular-version: ${{ matrix.angular-version }}
-      # - uses: ./.github/actions/package-version
-      #   with:
-      #     name: ngx-build-plus
-      #     version: ${{ matrix.angular-version }}
+      - uses: ./.github/actions/package-version
+        with:
+          name: "ngx-build-plus"
+          version: ${{ matrix.angular-version }}
 
       - run: npm install --global pnpm
       - run: pnpm install --frozen-lockfile false --verify-store-integrity false
