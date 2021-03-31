@@ -1,4 +1,4 @@
-name: Angular Elements experiments CI
+name: "Angular Elements experiments CI"
 
 on:
   push:
