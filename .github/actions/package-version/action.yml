@@ -1,0 +1,17 @@
+name: "Package version"
+description: "Manage package version."
+
+inputs:
+  name:
+    description: "The name of the package to manage."
+    required: true
+  version:
+    description: "The version of the package to assign."
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - run: node ${{ github.action_path }}/package-version.mjs ${{ inputs.name }} ${{ inputs.version }}
+      shell: bash
