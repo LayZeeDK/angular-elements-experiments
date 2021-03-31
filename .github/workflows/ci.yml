@@ -12,7 +12,10 @@ jobs:
 
     strategy:
       matrix:
-        angular-version: [11.0.x, 11.1.x, 11.2.x]
+        angular-version:
+          - 11.0.x
+          - 11.1.x
+          - 11.2.x
 
     steps:
       # Source code
