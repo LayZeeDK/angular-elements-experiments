@@ -28,7 +28,7 @@ jobs:
           angular-version: ${{ matrix.angular-version }}
 
       - run: npm install --global pnpm
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile false --verify-store-integrity false
 
       # Perform the action
       - run: pnpm build
