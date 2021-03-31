@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 12.x
 
-      - run: yarn global add pnpm
+      - run: npm install --global pnpm
       - run: pnpm install
 
       # Perform the action
