@@ -41,7 +41,6 @@
               "vendorChunk": false,
               "commonChunk": false,
               "buildOptimizer": true,
-              "es5BrowserSupport": false,
               "singleBundle": true,
               "index": "",
               "budgets": [
