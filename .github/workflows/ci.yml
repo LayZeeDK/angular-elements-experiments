@@ -13,6 +13,11 @@ jobs:
     strategy:
       matrix:
         angular-version:
+          - 9.0.x
+          - 9.1.x
+          - 10.0.x
+          - 10.1.x
+          - 10.2.x
           - 11.0.x
           - 11.1.x
           - 11.2.x
