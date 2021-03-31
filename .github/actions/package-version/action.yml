@@ -13,5 +13,5 @@ runs:
   using: "composite"
 
   steps:
-    - run: node ${{ github.action_path }}/package-version.mjs ${{ inputs.name }} ${{ inputs.version }}
+    - run: node ${{ github.action_path }}/package-version.mjs "${{ inputs.name }}" "${{ inputs.version }}"
       shell: bash
