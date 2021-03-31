@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        angular-version: [11.0.x, 11.1.x, 11.2.x]
+
     steps:
       # Source code
       - uses: actions/checkout@v2
@@ -19,6 +23,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - uses: ngworker/angular-versions-action@v3
+        with:
+          angular-version: ${{ matrix.angular-version }}
 
       - run: npm install --global pnpm
       - run: pnpm install
