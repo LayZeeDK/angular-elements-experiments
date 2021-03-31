@@ -14,13 +14,13 @@ jobs:
       matrix:
         angular-version:
           - 9.0.x
-          # - 9.1.x
+          - 9.1.x
           - 10.0.x
           - 10.1.x
-          # - 10.2.x
+          - 10.2.x
           - 11.0.x
-          # - 11.1.x
-          # - 11.2.x
+          - 11.1.x
+          - 11.2.x
 
     steps:
       # Source code
@@ -37,7 +37,7 @@ jobs:
       - uses: ./.github/actions/package-version
         with:
           name: "ngx-build-plus"
-          version: ${{ matrix.angular-version }}
+          version: <=${{ matrix.angular-version }}
 
       - run: npm install --global pnpm
       - run: pnpm install --frozen-lockfile false --verify-store-integrity false
