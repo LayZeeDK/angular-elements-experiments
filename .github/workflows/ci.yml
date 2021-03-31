@@ -11,17 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Source code
-      - uses: actions/checkout@v2
+    # Source code
+    - uses: actions/checkout@v2
 
-      # Set up environment
-      - name: Use Node.js 12.x
-        uses: action/setup-node@v1
-        with:
-          node-version: 12.x
+    # Set up environment
+    - name: Use Node.js 12.x
+      uses: action/setup-node@v1
+      with:
+        node-version: 12.x
 
-      - run: yarn global add pnpm
-      - run: pnpm install
+    - run: yarn global add pnpm
+    - run: pnpm install
 
-      # Perform the action
-      - run: pnpm build
+    # Perform the action
+    - run: pnpm build
